@@ -1,9 +1,22 @@
+import { useState, useEffect } from "react";
+
 function Relogio() {
-    return (
-      <div>
-        <h2>Meu Relógio</h2>
-      </div>
-    );
-  }
-  
-  export default Relogio;
+  const [horaAtual, setHoraAtual] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHoraAtual(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer); 
+  }, []);
+
+  return (
+    <div>
+      <h2>Relógio</h2>
+      <p>{horaAtual.toLocaleTimeString()}</p>
+    </div>
+  );
+}
+
+export default Relogio;
