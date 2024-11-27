@@ -16,21 +16,21 @@
     cursor: pointer;
   }
   .button-add {
-    background-color: #28a745; /* Cor verde */
+    background-color: #28a745; 
     color: white;
   }
   
   .button-add:hover {
-    background-color: #218838; /* Verde escuro ao passar o mouse */
+    background-color: #218838; 
   }
   
   .button-remove:hover {
-    background-color: #dc3545; /* Cor vermelha */
+    background-color: #dc3545; 
     color: white;
   }
   
   .button-remove:hover {
-    background-color: #c82333; /* Vermelho escuro ao passar o mouse */
+    background-color: #c82333; 
   }
   
   
