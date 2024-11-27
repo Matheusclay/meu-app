@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
+import React from "react";
+import Contador from "./components/Contador";
 
 function Atv02() {
     return (
-        <>
-            <h1>Atividade 02</h1>
+        <div className="App">
+          <Contador />
+        </div>
+      );
+    }
 
-            <Link to="/">Voltar</Link>
-        </>
-    );
-}
 
 export default Atv02;
